@@ -14,7 +14,7 @@ export class MainCardItem {
 
         <div class="col-lg-2 d-flex justify-content-center">
         <div class="card text-dark bg-secondary my-4" style="max-width: 18rem;">
-            <div class="card-header text-center bg-light "><h6 class="text-primary">${this.title}</h6></div>
+            <div class="card-header text-center bg-white shadow "><h6 class="text-primary">${this.title}</h6></div>
             <div class="card-body">
                 <div>
                 ${this.ToDo}
