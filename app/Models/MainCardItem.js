@@ -12,7 +12,7 @@ export class MainCardItem {
     get Template() {
         return /*html*/ `
 
-        <div class="col-lg-2 d-flex justify-content-center">
+        <div class="col-lg-3 d-flex justify-content-center">
         <div class="card text-dark bg-secondary my-4" style="max-width: 18rem;">
             <div class="card-header d-flex justify-content-between bg-white shadow ">
             <h6 class="text-primary">${this.title}</h6>
