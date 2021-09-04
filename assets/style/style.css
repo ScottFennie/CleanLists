@@ -3,3 +3,11 @@
 .f-height {
     height: 35px;
 }
+
+.select {
+    cursor: pointer;
+}
+
+.glassy {
+    opacity: .7;
+}
