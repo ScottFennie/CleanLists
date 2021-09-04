@@ -11,6 +11,9 @@ class MainCardItemsService {
 
 
     }
+    destroyMainCardItem(CardId) {
+        ProxyState.maincarditems = ProxyState.maincarditems.filter(main => main.id !== CardId)
+    }
 
 }
 

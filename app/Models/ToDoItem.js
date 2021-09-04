@@ -13,7 +13,7 @@ export class ToDoItem {
     get ToDoTemplate() {
         return /*html*/ `
 
-        <ul class="list-group bg-light shadow my-2">
+        <ul class="list-group bg-white shadow my-2">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="false" aria-label="...">
           ${this.title}

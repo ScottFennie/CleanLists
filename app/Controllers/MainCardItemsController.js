@@ -32,7 +32,10 @@ export class MainCardItemsController {
         }
         mainCardItemsService.createMainCardItem(mainCardItemData)
         form.reset()
-
-
     }
+
+    destroyMainCardItem(CardId) {
+        mainCardItemsService.destroyMainCardItem(CardId)
+    }
+
 }
