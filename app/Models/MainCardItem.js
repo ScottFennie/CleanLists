@@ -28,7 +28,7 @@ export class MainCardItem {
                 ${this.ToDo}
                 </div>
                 <form class=" d-flex justify-content-end" onsubmit="app.toDoItemsController.createToDoItem('${this.id}')">
-                        <input type="text" class=" f-height form-control me-2 my-2" id="title" placeholder="Add New Task" required>
+                        <input type="text" class=" f-height form-control me-2 my-2 bg-white" id="title" placeholder="Add New Task" required>
                         <button type="submit" class=" f-height btn btn-primary my-2 py-1">+</button>
                 </form>
             </div>
