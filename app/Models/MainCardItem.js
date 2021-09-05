@@ -7,6 +7,7 @@ export class MainCardItem {
 
         this.title = listData.title
         this.id = listData.id || generateId()
+        this.todos = 0
     }
 
     get Template() {
