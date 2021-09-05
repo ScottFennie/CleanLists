@@ -38,4 +38,8 @@ export class MainCardItemsController {
         mainCardItemsService.destroyMainCardItem(CardId)
     }
 
+    drawIt() {
+        _drawMainCardItems()
+    }
+
 }

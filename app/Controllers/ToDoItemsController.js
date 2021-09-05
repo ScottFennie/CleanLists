@@ -8,7 +8,6 @@ export class ToDoItemsController {
     }
     createToDoItem(themainId) {
         event.preventDefault()
-        debugger
 
         let form = event.target
 
@@ -18,6 +17,11 @@ export class ToDoItemsController {
         }
         toDoItemsService.createToDoItem(toDoData)
         form.reset()
+
+    }
+
+    changeAccomplishedStatus(isAccomp) {
+        toDoItemsService.changeAccomplishedStatus(isAccomp)
 
     }
 }
