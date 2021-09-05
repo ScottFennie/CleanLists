@@ -28,6 +28,7 @@ export class MainCardItemsController {
 
         let mainCardItemData = {
             title: form.title.value,
+            color: form.color.value
 
         }
         mainCardItemsService.createMainCardItem(mainCardItemData)

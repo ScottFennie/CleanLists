@@ -4,6 +4,10 @@
     height: 35px;
 }
 
+.f-height2 {
+    height: 50px;
+}
+
 .select {
     cursor: pointer;
 }
@@ -13,7 +17,7 @@
 }
 
 .mainf-height {
-    height: 42px;
+    height: 52px;
 }
 
 .strike {

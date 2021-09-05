@@ -9,6 +9,7 @@ export class MainCardItem {
         this.id = listData.id || generateId()
         this.todos = 0
         this.totaltodos = 0
+        this.color = listData.color
     }
 
     get Template() {

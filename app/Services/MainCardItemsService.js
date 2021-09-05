@@ -9,6 +9,8 @@ class MainCardItemsService {
         ProxyState.maincarditems = [...ProxyState.maincarditems, new MainCardItem(listData)]
         console.log("here is our new card object", ProxyState.maincarditems)
 
+        console.log(ProxyState.maincarditems)
+
 
     }
     destroyMainCardItem(CardId) {

@@ -18,14 +18,17 @@
         <div class="container-fluid">
             <div class="row bg-secondary">
                 <div class="col-4 d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class=" mb-1 bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
                     <h2 class="ps-3 text-primary"> Listr</h2>
                 </div>
                 <div class="col-8">
                     <form class="d-flex justify-content-end align-items-center" onsubmit="app.mainCardItemsController.createAList()">
                         <input type="text" class=" mainf-height bg-white form-control me-2 my-2" id="title" placeholder="Add New List" required>
+                        <select class=" f-height2 form-select form-control me-2" id="color" required>
+                            <option selected disabled>Color</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                          </select>
                         <button type="submit" class="btn btn-primary my-2 py-1 f-height">+</button>
                     </form>
                 </div>

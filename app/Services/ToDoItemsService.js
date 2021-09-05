@@ -38,6 +38,10 @@ class ToDoItemsService {
 
             if (currentCard.todos >= 1) {
                 currentCard.todos--
+                    if (currentCard.todos < 1) {
+                        // TODO 
+                        alert("Nice Job!")
+                    }
             }
 
 
