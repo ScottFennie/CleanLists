@@ -23,3 +23,11 @@
 .strike {
     text-decoration: line-through;
 }
+
+.blue {
+    background-color: rgba(0, 89, 255, 0.3);
+}
+
+.red {
+    background-color: rgba(255, 0, 64, 0.3);
+}
