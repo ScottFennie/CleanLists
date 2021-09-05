@@ -14,8 +14,12 @@ class ToDoItemsService {
 
         let currentCardFinder = ProxyState.maincarditems.find(t => t.id == todoData.mainCardId)
 
+        currentCardFinder.totaltodos++
 
-        currentCardFinder.todos++
+
+            currentCardFinder.todos++
+
+            ProxyState.maincarditems = ProxyState.maincarditems
 
     }
     changeAccomplishedStatus(ID) {
