@@ -22,7 +22,7 @@ export class ToDoItem {
         <ul class="list-group bg-white shadow my-2">
         <div class="form-check form-switch">
         <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" id="('${this.id}')" value="" aria-label="..." onclick="app.toDoItemsController.changeAccomplishedStatus('${this.id}')" ${this.checked == true ? "disabled" : "checked"}>
+          <input class="form-check-input me-1" type="checkbox" id="('${this.id}')" value="" aria-label="..." onclick="app.toDoItemsController.changeAccomplishedStatus('${this.id}')" ${this.checked == true ? "" : "checked"}>
           <span class="${this.checked == true ? "strike" : "" }"
           >${this.title}</span>
         </li>

@@ -19,11 +19,14 @@ class ToDoItemsService {
         let currentToDo = ProxyState.todoitems.find(main => main.id == ID)
 
         if (currentToDo.checked === false) {
-            console.log("jimbo")
             currentToDo.checked = true
             ProxyState.todoitems = ProxyState.todoitems
 
             console.log("change?", ProxyState.todoitems)
+        } else if (currentToDo.checked === true) {
+            currentToDo.checked = false
+            ProxyState.todoitems = ProxyState.todoitems
+
         }
 
     }
