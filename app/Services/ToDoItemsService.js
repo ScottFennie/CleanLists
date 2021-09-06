@@ -22,6 +22,12 @@ class ToDoItemsService {
             ProxyState.maincarditems = ProxyState.maincarditems
 
     }
+
+    destroyTodoItem(TodoId) {
+        ProxyState.todoitems = ProxyState.todoitems.filter(td => td.id !== TodoId)
+
+    }
+
     changeAccomplishedStatus(ID) {
 
         let currentToDo = ProxyState.todoitems.find(main => main.id == ID)
@@ -39,7 +45,7 @@ class ToDoItemsService {
             if (currentCard.todos >= 1) {
                 currentCard.todos--
                     if (currentCard.todos < 1) {
-                        // TODO 
+                        // TODO add a sweet alert
                         alert("Nice Job!")
                     }
             }

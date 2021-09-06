@@ -22,6 +22,10 @@ export class ToDoItemsController {
 
     }
 
+    destroyTodoitem(TodoId) {
+        toDoItemsService.destroyTodoItem(TodoId)
+    }
+
     changeAccomplishedStatus(isAccomp) {
         toDoItemsService.changeAccomplishedStatus(isAccomp)
 
