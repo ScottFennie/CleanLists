@@ -1,11 +1,11 @@
 import { ProxyState } from "../AppState.js"
 import { ToDoItem } from "../Models/ToDoItem.js"
+import { saveState } from "../Utils/LocalStorage.js"
 
 class ToDoItemsService {
 
     constructor() {
-
-
+        ProxyState.on('todoitems', saveState)
     }
 
     createToDoItem(todoData) {

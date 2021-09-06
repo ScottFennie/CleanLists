@@ -19,6 +19,7 @@ export class MainCardItemsController {
 
         ProxyState.on("maincarditems", _drawMainCardItems)
         ProxyState.on("todoitems", _drawMainCardItems)
+        _drawMainCardItems()
     }
 
     createAList() {

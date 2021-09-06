@@ -1,9 +1,12 @@
 import { ProxyState } from "../AppState.js";
 import { MainCardItem } from "../Models/MainCardItem.js";
+import { saveState } from "../Utils/LocalStorage.js";
 
 class MainCardItemsService {
 
-    constructor() {}
+    constructor() {
+        ProxyState.on('maincarditems', saveState)
+    }
 
     createMainCardItem(listData) {
         ProxyState.maincarditems = [...ProxyState.maincarditems, new MainCardItem(listData)]
