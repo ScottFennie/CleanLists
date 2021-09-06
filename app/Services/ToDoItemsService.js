@@ -16,15 +16,21 @@ class ToDoItemsService {
 
         currentCardFinder.totaltodos++
 
-
             currentCardFinder.todos++
-
             ProxyState.maincarditems = ProxyState.maincarditems
-
     }
 
     destroyTodoItem(TodoId) {
-        ProxyState.todoitems = ProxyState.todoitems.filter(td => td.id !== TodoId)
+
+        let currentToDo = ProxyState.todoitems.find(main => main.id == TodoId)
+
+        let popid = (currentToDo.mainCardId)
+
+        let currentCard = ProxyState.maincarditems.find(m => m.id == popid)
+
+        currentCard.totaltodos--
+
+            ProxyState.todoitems = ProxyState.todoitems.filter(td => td.id !== TodoId)
 
     }
 
@@ -37,8 +43,11 @@ class ToDoItemsService {
         let currentCard = ProxyState.maincarditems.find(m => m.id == popid)
 
 
+        ProxyState.maincarditems = ProxyState.maincarditems
 
-        if (currentToDo.checked === false) {
+        ProxyState.todoitems = ProxyState.todoitems
+
+        if (currentToDo.checked == false) {
 
             currentToDo.checked = true
 
@@ -49,16 +58,11 @@ class ToDoItemsService {
                         alert("Nice Job!")
                     }
             }
-
-
-
             ProxyState.maincarditems = ProxyState.maincarditems
 
             ProxyState.todoitems = ProxyState.todoitems
 
-            console.log(currentCard)
-
-        } else if (currentToDo.checked === true) {
+        } else if (currentToDo.checked == true) {
             currentToDo.checked = false
 
             currentCard.todos++
@@ -67,9 +71,11 @@ class ToDoItemsService {
 
             ProxyState.todoitems = ProxyState.todoitems
 
-            console.log(currentCard)
-
         }
+
+        ProxyState.maincarditems = ProxyState.maincarditems
+
+        ProxyState.todoitems = ProxyState.todoitems
 
     }
 }

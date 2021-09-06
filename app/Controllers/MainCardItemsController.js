@@ -5,9 +5,12 @@ import { mainCardItemsService } from "../Services/MainCardItemsService.js"
 
 function _drawMainCardItems() {
 
+
     let template = ""
     ProxyState.maincarditems.forEach(m => template += m.Template)
     document.getElementById("main-cards").innerHTML = template
+
+    console.log("page reload", ProxyState.maincarditems)
 
 
 }

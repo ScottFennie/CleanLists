@@ -7,8 +7,8 @@ export class MainCardItem {
 
         this.title = listData.title
         this.id = listData.id || generateId()
-        this.todos = 0
-        this.totaltodos = 0
+        this.todos = listData.todos || 0
+        this.totaltodos = listData.totaltodos || 0
         this.color = listData.color
     }
 

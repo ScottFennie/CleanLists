@@ -11,7 +11,7 @@ export class ToDoItem {
         this.completed = todoData.completed
         this.mainCardId = todoData.mainCardId
         this.id = todoData.id || generateId()
-        this.checked = false
+        this.checked = todoData.checked || false
 
     }
 
