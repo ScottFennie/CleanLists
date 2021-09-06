@@ -40,7 +40,9 @@ export class MainCardItemsController {
     }
 
     destroyMainCardItem(CardId) {
-        mainCardItemsService.destroyMainCardItem(CardId)
+        if (window.confirm("Are you sure you want to delete this list?")) {
+            mainCardItemsService.destroyMainCardItem(CardId)
+        }
     }
 
     drawIt() {

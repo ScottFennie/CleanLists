@@ -31,3 +31,25 @@
 .red {
     background-color: rgba(255, 0, 64, 0.3);
 }
+
+.title-title {
+    font-family: 'Poppins', sans-serif;
+    background: #0C158F;
+    background: -webkit-linear-gradient(to right, #0C158F 6%, #D44A8B 100%);
+    background: -moz-linear-gradient(to right, #0C158F 6%, #D44A8B 100%);
+    background: linear-gradient(to right, #0C158F 6%, #D44A8B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Card-t {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.grad {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

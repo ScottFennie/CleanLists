@@ -30,9 +30,14 @@ class ToDoItemsService {
 
         currentCard.totaltodos--
 
-            currentCard.todo--
 
-            ProxyState.todoitems = ProxyState.todoitems.filter(td => td.id !== TodoId)
+            if (currentToDo.checked == false) {
+
+                currentCard.todos--
+            }
+
+
+        ProxyState.todoitems = ProxyState.todoitems.filter(td => td.id !== TodoId)
 
     }
 

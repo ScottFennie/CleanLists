@@ -23,7 +23,11 @@ export class ToDoItemsController {
     }
 
     destroyTodoitem(TodoId) {
-        toDoItemsService.destroyTodoItem(TodoId)
+
+        if (window.confirm("Are you sure you want to delete this task?")) {
+            toDoItemsService.destroyTodoItem(TodoId)
+        }
+
     }
 
     changeAccomplishedStatus(isAccomp) {
