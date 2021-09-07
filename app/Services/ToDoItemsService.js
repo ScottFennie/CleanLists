@@ -61,8 +61,11 @@ class ToDoItemsService {
             if (currentCard.todos >= 1) {
                 currentCard.todos--
                     if (currentCard.todos < 1) {
-                        // TODO add a sweet alert
-                        alert("Nice Job!")
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Nice Work!',
+                            text: 'Looks like someone is having a productive day!',
+                        })
                     }
             }
             ProxyState.maincarditems = ProxyState.maincarditems

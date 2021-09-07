@@ -40,9 +40,25 @@ export class MainCardItemsController {
     }
 
     destroyMainCardItem(CardId) {
-        if (window.confirm("Are you sure you want to delete this list?")) {
-            mainCardItemsService.destroyMainCardItem(CardId)
-        }
+
+        Swal.fire({
+            title: 'Are you sure you want to delete this list?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your list has been deleted.',
+                    'success'
+                )
+                mainCardItemsService.destroyMainCardItem(CardId)
+            }
+        })
     }
 
     drawIt() {
